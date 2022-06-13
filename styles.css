@@ -3,35 +3,60 @@
     font-family: 'Open Sans', sans-serif;
 }
 *{
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
 }
 
 header{
     width:100%;
-    height:100vh;
-    background-image: url("/TSAPhotos/TSAMay2022/TSAmain.jpeg");
+    height: 50vh;
+    /*background-image: url("/TSAPhotos/TSAMay2022/TSAmain.jpeg");
     background-position:center;
-    background-size:cover;
+    background-size:cover;*/
     
 }
 
 nav{
+    width:100%;
     padding:.5rem;
     color:white;
     background-image: linear-gradient(black,#36454F);
+    display:flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
 ul{
     display: flex;
-    flex-direction: row;  
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+li{
+    list-style-type: none;
+    padding:1rem;
+
+
 }
 
-.whiteimg{
-    flex-grow:.5;
+.hamburger{
+    visibility:hidden;
+    padding-right: 20px;
+  }
+
+.line{
+    width: 35px;
+    height: 3px;
+    background-color: #C4B454;
+    margin: 6px 0;
+    border-radius:3px;
+  
 }
+
 #whiteimg{
     height: 3rem;
    cursor: pointer;
@@ -46,12 +71,7 @@ ul{
 }
 
 
-li{
-    list-style-type: none;
-    padding:1rem;
-   
 
-}
 
 /*--.main{
     height: 100vh;
@@ -64,5 +84,30 @@ li{
 }*/
 
 
-
-
+@media screen and (max-device-width:1024px){
+    .nav{
+        display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+    
+      }
+      
+      .hamburger{
+      
+       visibility: visible;
+        cursor:pointer;
+        
+      }
+      ul{
+        display:none;
+        
+      }
+      
+      ul.active{
+        display:flex;
+        flex-direction:column;
+        align-content:center;
+        
+      }
+  
+}
