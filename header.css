@@ -177,14 +177,7 @@ a:active{
         animation-timing-function: cubic-bezier(0, 0.9, 0.53, 1.12);
         
       }
-      @keyframes liripple {
-        from {transform: translate(0px,0px);}
-        to {transform: translate(50px,0px);}
-      }
-      li{
-          animation-name:liripple ;
-          animation-duration: 10s;
-      }
+      
 
       @keyframes towhite {
         0%{
