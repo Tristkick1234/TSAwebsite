@@ -1,0 +1,164 @@
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    --vegasgold:#C4B454;
+    --charcoal:#36454F;
+}
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.officers>img .committeeheads>img{
+    filter: grayscale(100%);
+}
+img:hover{
+    filter:grayscale(0);
+}
+
+main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+main>h2{
+    background-color: var(--charcoal);
+    width:100%;
+    padding:2rem;
+    color:white;
+    text-align: center;
+}
+
+.mstatement, .officers, .committeeheads{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    align-content:center;
+   
+    padding:1rem;
+    margin:1rem;
+
+}
+
+.mstatement{
+    grid-template-columns: auto;
+    justify-content: center;
+    height:30vh;
+
+}
+.mstatement>p{
+    
+    font-size: 1.5rem;
+    width:70rem;
+    border-top: 3px solid var(--vegasgold);
+    border-bottom: 3px solid var(--vegasgold);
+}
+
+.advisor{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5rem;
+}
+
+.advisor>img{
+    padding:1rem;
+   
+    outline: 2px solid var(--vegasgold);
+    margin:2rem;
+    box-shadow: -10px 20px 10px;
+    
+}
+.advisor>p,.committeeheads>p{
+    font-size: 1.15rem;
+    width:50rem;
+}
+
+.officers>*>h3{
+    color:black;
+    
+}
+.officer-item,.chitem{
+    margin:1rem;
+    padding: 1rem;
+   
+  
+}
+.offimg{
+    
+    padding: 1rem;
+    background-color: white;
+  
+}
+
+.offimg>img,.advisor>img{
+    filter: grayscale(1);
+}
+
+.offimg>img:hover,.advisor>img:hover{
+    filter: grayscale(0);
+}
+
+.tooltip {
+    position:relative;
+    visibility: visible;
+    box-shadow: none;
+    display: block;
+    
+  }
+.tooltiptext{
+    visibility: hidden;
+    box-shadow: -10px 20px 10px;
+    position: absolute;
+    left:5rem;
+    
+   
+    
+   
+}
+  /* Tooltip text */
+  .tooltip,.tooltiptext {
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+
+    z-index: 2;
+  }
+  .tooltip:hover .tooltiptext{
+    visibility: visible;
+  }
+
+  
+
+@media screen and (max-width:992px) {
+
+    .mstatement{
+        margin-top:10rem;
+    }
+    .advisor>p,.mstatement>p{
+        width:auto;
+     
+    }
+
+    .mstatement, .officers, .committeeheads{
+        display:grid;
+        grid-template-columns: auto;
+        align-items: center;
+        align-content:center;
+       
+        padding:1rem;
+        margin:1rem;
+    
+    }
+    
+    
+}

@@ -6,6 +6,7 @@
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -21,6 +22,9 @@ body{
     
 }
 
+.container>*{
+    margin:1rem;
+}
 .top{
     background-image: url("/TSAPhotos/TSAMay2022/TSAmain.jpeg");
     background-repeat: no-repeat;
@@ -93,7 +97,7 @@ body{
 
 
 .dtp{
-    height: 60vh;
+    height: 30vh;
     padding:1rem;
     justify-content:space-around;
     
@@ -101,11 +105,11 @@ body{
     color:rgb(254, 254, 254);
     font-size: 1.25rem;
 
-    background-image: url("/TSAPhotos/mousetrapcar.png");
+    /*background-image: url("/TSAPhotos/mousetrapcar.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: saturate(85%) brightness(99%) ;
+    filter: saturate(85%) brightness(99%) ;*/
     
 
 
@@ -122,6 +126,7 @@ body{
     padding:1rem;
     overflow:wrap;
     background-color: #36454F;
+    justify-content: center;
    
     
 }
@@ -133,6 +138,10 @@ body{
     border-radius: 5px;
     background-color: #f8f6eb;
     box-shadow: 5px 5px black;
+}
+
+.news{
+    border-bottom: 1px solid #c5b358;
 }
 
 

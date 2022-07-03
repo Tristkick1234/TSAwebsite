@@ -1,0 +1,44 @@
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #f8f6eb;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+    margin:1rem;
+
+}
+
+#goldimg{
+    height:4rem;
+    display:block;
+    
+    margin: auto;
+    position:relative;
+    top: 1vh;
+
+    padding:1rem;
+    margin: auto;
+    animation-duration: 2s;
+    animation-name: tsatransition;
+}
+
+#myFrame{
+    padding:1rem;
+}
+
+
