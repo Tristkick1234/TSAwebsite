@@ -29,6 +29,7 @@ body{
     background-image: url("/TSAPhotos/TSAMay2022/TSAmain.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height:100vh;
 
     
@@ -97,13 +98,20 @@ body{
 
 
 .dtp{
-    height: 30vh;
-    padding:1rem;
-    justify-content:space-around;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,10rem);
+    grid-template-rows: repeat(2,4rem);
     
-    align-items: center;
-    color:rgb(254, 254, 254);
+    justify-content:center;
+    align-content: center;
+    height: 30vh;
+    overflow-y: scroll;
+    padding:1rem;
+    background-color: #36454F;
+  
+    color: white;
     font-size: 1.25rem;
+  
 
     /*background-image: url("/TSAPhotos/mousetrapcar.png");
     background-size: cover;
@@ -120,11 +128,11 @@ body{
     border-right:1px solid #c5b358;
 }
 
-.news,.dtp{
+.news{
     display: flex;
     flex-direction: row;
     padding:1rem;
-    overflow:wrap;
+
     background-color: #36454F;
     justify-content: center;
    

@@ -50,7 +50,7 @@ main>h2{
 .mstatement{
     grid-template-columns: auto;
     justify-content: center;
-    height:30vh;
+    margin:1rem;
 
 }
 .mstatement>p{
@@ -120,7 +120,7 @@ main>h2{
     position: absolute;
     left:5rem;
     
-   
+   width:100%;
     
    
 }
