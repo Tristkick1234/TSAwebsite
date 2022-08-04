@@ -1,29 +1,47 @@
-var i = 0; 			// Start Point
-var images = [];	// Images Array
-var time = 3000;	// Time Between Switch
-	 
-// Image List
-images[0] = "";
-images[1] = "";
-images[2] = "";
-images[3] = "";
+ let button = document.getElementById("button");
+ let button2 = document.getElementById("button2");
+ let images = document.getElementById("changingImg");
 
-// Change Image
-function changeImg(){
-	document.slide.src = images[i];
+ let currentIndex = document.getElementById("currentIndex");
+ let totalIndex = document.getElementById("total");
+ let x=0;
 
-	// Check If Index Is Under Max
-	if(i < images.length - 1){
-	  // Add 1 to Index
-	  i++; 
-	} else { 
-		// Reset Back To O
-		i = 0;
-	}
 
-	// Run function every x seconds
-	setTimeout("changeImg()", time);
-}
+ let imageList = ["/TSAPhotos/TSAAugust2022/newstaff1.jpg","/TSAPhotos/TSAAugust2022/newstaff2.jpg"];
+ 
 
-// Run function when page loads
-window.onload=changeImg;
+// setting the amount of pictures
+ totalIndex.innerHTML = imageList.length;
+ currentIndex.innerHTML= x;
+
+ //click
+ button.addEventListener('click', () => {
+//subtract one
+	images.src = imageList[x-=1];
+  //if the index is less than zero, set the number and picture to 0
+  if(x < 0){
+    x=0;
+    images.src= imageList[0];
+  }
+	console.log(x);
+  currentIndex.innerHTML = x+1;
+  })
+  
+
+
+  button2.addEventListener('click', () => {
+  
+  
+	images.src= imageList[x+=1];
+
+  if(x>1){
+    x=1;
+    images.src=imageList[1];
+  }
+  currentIndex.innerHTML = x+1;
+	console.log(x);
+ 
+  })
+  
+
+ 
