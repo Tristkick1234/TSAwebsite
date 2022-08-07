@@ -17,6 +17,14 @@
     height:2rem;
 }
 
+#email{
+    cursor:pointer;
+    color:darkgoldenrod;
+
+}
+#email:hover{
+    color:white;
+}
 footer{
     
     padding:5rem;
