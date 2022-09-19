@@ -153,8 +153,10 @@ body{
     border-bottom: 1px solid #c5b358;
 }
 
+.news-item>p>a{
+    color:#c5b358;
 
-
+}
 
 
 footer{
