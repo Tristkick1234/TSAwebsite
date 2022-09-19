@@ -4,7 +4,7 @@
 
  let currentIndex = document.getElementById("currentIndex");
  let totalIndex = document.getElementById("total");
- let x=0;
+ let x=1;
 
 
  let imageList = ["/TSAPhotos/TSAAugust2022/newstaff1.jpg","/TSAPhotos/TSAAugust2022/newstaff2.jpg"];
@@ -18,8 +18,8 @@
  button.addEventListener('click', () => {
 //subtract one
 	images.src = imageList[x-=1];
-  //if the index is less than zero, set the number and picture to 0
-  if(x < 0){
+  //if the index is less than zero, set the number and picture to 1
+  if(x <= 0){
     x=0;
     images.src= imageList[0];
   }
