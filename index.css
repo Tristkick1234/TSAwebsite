@@ -131,7 +131,7 @@ body{
 
 .news{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding:1rem;
 
     background-color: #36454F;
