@@ -20,7 +20,7 @@
 	images.src = imageList[x-=1];
   //if the index is less than zero, set the number and picture to 1
   if(x <= 0){
-    x=1;
+    x=0;
     images.src= imageList[0];
   }
 	console.log(x);
