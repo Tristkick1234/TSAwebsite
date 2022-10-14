@@ -36,7 +36,7 @@ main>h2{
     text-align: center;
 }
 
-.mstatement, .officers, .committeeheads{
+.mstatement, .officers, .committeeheads, .c-suite{
     display:grid;
     grid-template-columns: auto auto auto;
     align-items: center;
@@ -86,7 +86,7 @@ main>h2{
     color:black;
     
 }
-.officer-item,.chitem{
+.officer-item,.chitem,.suite-item{
     margin:1rem;
     padding: 1rem;
    
