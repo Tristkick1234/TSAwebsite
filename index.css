@@ -99,15 +99,15 @@ body{
 
 
 .dtp{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,10rem);
-    grid-template-rows: repeat(2,4rem);
+    display:flex;
+    flex-direction: row;
+    margin:0;
     
     justify-content:center;
     align-content: center;
-    height: 30vh;
-    overflow-y: scroll;
-    padding:1rem;
+    
+    
+    padding:4rem;
     background-color: #36454F;
   
     color: white;
@@ -126,6 +126,7 @@ body{
 }
 .dtp-item{
     padding:1rem;
+    
     border-right:1px solid #c5b358;
 }
 
