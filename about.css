@@ -11,14 +11,6 @@
 
 }
 
-
-.officers>img .committeeheads>img{
-    filter: grayscale(100%);
-}
-img:hover{
-    filter:grayscale(0);
-}
-
 main{
     
     display: flex;
