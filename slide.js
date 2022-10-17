@@ -1,47 +1,44 @@
- let button = document.getElementById("button");
- let button2 = document.getElementById("button2");
- let images = document.getElementById("changingImg");
+ let button = document.getElementById("button-left");
+ let button2 = document.getElementById("button-right");
+
+ let backgroundForImage = document.getElementById("placeforslider");
+ //let buttons= document.querySelector("button");
+ let images = document.querySelectorAll(".changingImg");
 
  let currentIndex = document.getElementById("currentIndex");
  let totalIndex = document.getElementById("total");
- let x=1;
+ let x=0;
 
 
  let imageList = ["/TSAPhotos/TSAAugust2022/newstaff1.jpg","/TSAPhotos/TSAAugust2022/newstaff2.jpg"];
  
 
-// setting the amount of pictures
- totalIndex.innerHTML = imageList.length;
- currentIndex.innerHTML= x;
+
 
  //click
- button.addEventListener('click', () => {
-//subtract one
-	images.src = imageList[x-=1];
-  //if the index is less than zero, set the number and picture to 1
-  if(x <= 0){
-    x=0;
-    images.src= imageList[0];
-  }
-	console.log(x);
-  currentIndex.innerHTML = x+1;
-  })
-  
-
-
-  button2.addEventListener('click', () => {
-  
-  
-	images.src= imageList[x+=1];
-
-  if(x>1){
-    x=1;
-    images.src=imageList[1];
-  }
-  currentIndex.innerHTML = x+1;
-	console.log(x);
  
+ button2.addEventListener('click', () => {
+  
+  images[0].src = imageList[x++];
+  console.log(x);
+  if(x>imageList.length-1){
+    x=0;
+  }
+
   })
   
 
+
+  button.addEventListener('click', () => {
+    
+    images[0].src = imageList[x--];
+  console.log(x);
+
+  if(x<0){
+    x=imageList.length-1;
+  }
+  })
+  
+  backgroundForImage.style.backgroundImage = "url("+images[0].src+")";
+ 
  

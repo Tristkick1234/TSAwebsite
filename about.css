@@ -55,19 +55,36 @@ main>h2{
 
 .advisor{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding:5rem;
+    padding:2rem;
 }
 
-.advisor>img{
+.bable,.penn{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
     padding:1rem;
+    width:50%;
    
+}
+
+.bable>img{
+    padding:1rem;
+    width: 100%;
+    height:auto;
+    max-height:20rem;
+    max-width:15rem;
     outline: 2px solid var(--vegasgold);
     margin:2rem;
     box-shadow: -10px 20px 10px;
     
+}
+.bable>p, .penn>p{
+    width:100%;
+    padding:1rem;
 }
 .advisor>p,.committeeheads>p{
     font-size: 1.15rem;
@@ -89,14 +106,6 @@ main>h2{
     padding: 1rem;
     background-color: white;
   
-}
-
-.offimg>img,.advisor>img{
-    filter: grayscale(1);
-}
-
-.offimg>img:hover,.advisor>img:hover{
-    filter: grayscale(0);
 }
 
 .tooltip {
