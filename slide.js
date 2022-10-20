@@ -21,6 +21,8 @@
 
  //click
  
+ backgroundForImage.style.backgroundImage = "url(/TSAPhotos/TSAAugust2022/newstaff1.jpg)"
+
  button2.addEventListener('click', () => {
   backgroundForImage.style.backgroundImage = "url("+imageList[x]+")";
   images[0].src = imageList[x++];
